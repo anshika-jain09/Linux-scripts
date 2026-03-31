@@ -1,76 +1,51 @@
-**Open Source Audit**
+# Open Source Audit Scripts
 
-**Student Details**
-Name: Anshika Jain
-Roll Number: 24MEI10131
-Course: Open Source Software
+**Student Name:** Anshika Jain  
+**Roll Number:** 24MEI10131 
 
-**Project Overview**
-This project is an audit and analysis of Free and Open Source Software (FOSS) using VLC Media Player as a case study. It includes both theoretical understanding and practical implementation using Linux shell scripting.
+**Chosen Software:** VLC Media Player 
 
-The project demonstrates:
-Basic Linux usage
-Shell scripting concepts
-Understanding of open-source tools
+---
 
-**Chosen Software**
-VLC Media Player
-VLC is a free and open-source multimedia player that supports multiple audio and video formats and works across different operating systems.
+## Project Description
+This repository contains five Linux shell scripts developed for the Open Source Software lab. These scripts demonstrate basic system auditing, package inspection, disk and permission checking, log analysis, and automation of simple tasks. Each script includes instructions on how to run it in Linux Mint.
 
-**Environment Setup**
-This project was tested on:
-Linux Mint (running on VirtualBox)
+---
 
-You can use:
-VirtualBox with Linux Mint
-OR
-Any Ubuntu-based Linux system
+## Scripts Description
 
-**Project Setup**
-Option 1: Clone Repository
-git clone
-cd oss-audit-project
+1. **Script 1: System Identity Report**  
+   - Displays kernel version, current username, uptime, Linux distribution, and current date.
 
-Option 2: Download ZIP
-Download repository from GitHub
-Extract it
-Open terminal in that folder
+2. **Script 2: FOSS Package Inspector**  
+   - Checks if a specified package is installed.  
+   - Shows package details (version, license, summary) if installed.  
+   - Provides a short philosophy note about the package.
 
-**Script Descriptions**
-**script1.sh** — System Identity Report
-Displays system information such as kernel version, user, uptime, and date.
+3. **Script 3: Disk and Permission Auditor**  
+   - Lists permissions and sizes of important system directories such as `/etc`, `/var/log`, `/home`, `/usr/bin`, and `/tmp`.
 
-**script2.sh** — FOSS Package Inspector
-Checks whether VLC is installed on the system.
+4. **Script 4: Log File Analyzer**  
+   - Searches a specified log file for a keyword (default: "error").  
+   - Counts occurrences of the keyword and displays matching lines.
 
-**script3.sh** — Disk and Permission Auditor
-Displays permissions and ownership of important directories.
+5. **Script 5: Open Source Manifesto Generator**  
+   - Asks user three questions.  
+   - Generates a personalized manifesto text file using the answers.
 
-**script4.sh** — Log File Analyzer
-Counts how many times a keyword (like "error") appears in a log file.
-
-**script5.sh** — Open Source Manifesto Generator
-Takes user input and generates a personalized open-source statement saved in a text file.
-
-**Output**
-Script outputs are displayed in the terminal
-Script 5 creates a text file containing the manifesto
+---
 
 ## How to Run Scripts
+
 1. Open a terminal in Linux Mint.  
 2. Navigate to the folder containing the scripts.  
 3. Make the scripts executable:
 ```bash
 chmod +x script1.sh
-./script1.sh
 chmod +x script2.sh
-./script2.sh
 chmod +x script3.sh
-./script3.sh
 chmod +x script4.sh
-./script4.sh
 chmod +x script5.sh
-./script5.sh
 
 ## Dependencies
 - Linux Mint (or Debian-based Linux)
@@ -79,3 +54,4 @@ chmod +x script5.sh
 - `dpkg` command (for package inspection in Script 2)
 - `lsb_release` command (for distro info in Script 1)
 - Access to log files (e.g., /var/log/messages) for Script 4
+
